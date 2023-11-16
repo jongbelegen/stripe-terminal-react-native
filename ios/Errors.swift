@@ -58,8 +58,6 @@ extension ErrorCode.Code {
             return "ConnectionTokenProviderCompletedWithNothingWhileForwarding"
         case .nilPaymentIntent:
             return "NilPaymentIntent"
-        case .confirmInvalidPaymentIntent:
-            return "ConfirmInvalidPaymentIntent"
         case .nilSetupIntent:
             return "NilSetupIntent"
         case .nilRefundPaymentMethod:
@@ -179,11 +177,7 @@ extension ErrorCode.Code {
         case .updatePaymentIntentUnavailableWhileOffline:
             return "UpdatePaymentIntentUnavailableWhileOffline"
         case .updatePaymentIntentUnavailableWhileOfflineModeEnabled:
-            return "UpdatePaymentIntentUnavailableWhileOfflineModeEnabled"    
-        case .forwardingTestModePaymentInLiveMode:
-            return "ForwardingTestModePaymentInLiveMode"
-        case .forwardingLiveModePaymentInTestMode:
-            return "ForwardingLiveModePaymentInTestMode"
+            return "UpdatePaymentIntentUnavailableWhileOfflineModeEnabled"
         case .offlinePaymentsDatabaseTooLarge:
             return "OfflinePaymentsDatabaseTooLarge"
         case .readerConnectionNotAvailableOffline:
@@ -204,14 +198,8 @@ extension ErrorCode.Code {
             return "OfflineAndCardExpired"
         case .offlineTransactionDeclined:
             return "OfflineTransactionDeclined"
-        case .offlineCollectAndConfirmMismatch:
-            return "OfflineCollectAndConfirmMismatch"
         case .connectionTokenProviderCompletedWithErrorWhileForwarding:
             return "ConnectionTokenProviderCompletedWithErrorWhileForwarding"
-        case .notConnectedToInternetAndOfflineBehaviorRequireOnline:
-            return "NotConnectedToInternetAndOfflineBehaviorRequireOnline"
-        case .offlineBehaviorForceOfflineWithFeatureDisabled:
-            return "OfflineBehaviorForceOfflineWithFeatureDisabled"
         case .readerTippingParameterInvalid:
             return "ReaderTippingParameterInvalid"
         case .invalidLocationIdParameter:
